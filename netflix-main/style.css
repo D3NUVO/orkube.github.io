@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 28px 56px;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
+header a.logo {
+    display: block;
+}
+
+header .logo svg {
+    fill: #e50914;
+    height: 37px;
+}
+
+header div+div {
+    text-align: right;
+}
+
+header a.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #e50914;
+    color: #fff;
+    padding: 7px 17px;
+    border-radius: 3px;
+}
+
+header select{
+    background: transparent;
+    color: #aaa;
+    padding: 6px 17px;
+    border-radius: 3px;
+    padding-right: 0;
+}
+
+header div.select {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+header div.select svg {
+    height: 20px;
+    color: #aaa;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+div.splash div.background img{
+    max-width: 100%;
+    opacity: 0.6;
+}
+
+div.splash div.background {
+    position: relative;
+}
+
+div.splash div.gradient {
+    background-image: linear-gradient(0deg,transparent 50%,rgba(0,0,0,.7)),radial-gradient(50% 100%,transparent 0,rgba(0,0,0,.7) 100%);
+    position: absolute;
+    inset: 0;
+}
+
+div.content {
+    max-width: 784px;
+    margin-left: 550px;
+    position: absolute;
+    inset: 0;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+div.splash h1 {
+    font-size: 4.125rem;
+}
+
+div.splash h2{
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+
+div.splash h3 {
+    font-size: 1.2rem
+}
+
+div.splash form {
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr max-content;
+}
+
+div.splash form input {
+    width: 100%;
+}
+
+div.splash input{
+    padding: 23px;
+    font-size: 1.2rem;
+}
+
+div.splash input ~ span {
+    position: absolute;
+    left: 12px;
+    top: 27px;
+    z-index: 3;
+    color: #aaa;
+    transition: all 0.3s ease;
+}
+
+div.splash input:focus {
+    padding-top: 19px;
+    padding-bottom: 23px;
+}
+
+div.splash input:focus ~ span {
+    top: 4px;
+    font-size: .8rem;
+}
+
+div.splash button{
+    font-size: 1.625rem;
+    padding: 20px 26px;
+    color: #fff;
+    background-color: #e50914;
+    border: 0;
+}
+
+section{
+    display: flex;
+    padding: 2px 298px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+section .texts{
+    font-size: 30px;
+}
+
+section .media.s1{
+    margin-right: -42px;
+}
+
+section .media.s1 img{
+    width: 513px;
+    margin-top: 0px;
+    margin-left: 337px;
+    position: relative;
+    z-index: 2;
+}
+
+section .media.s1 video{
+    position: absolute;
+    width: 372px;
+    margin-left: -445px;
+    margin-top: 81px;
+    z-index: 1;;
+}
+
+section .media.s2{
+    margin-right: 312px;
+    margin-left: -64px;
+
+}
+
+section .media.s2 img{
+    width: 529px;
+}
+
+section .media.s3{
+    margin-left: 181px;
+}
+
+section .media.s3 img{
+    width: 559px;
+    position: relative;
+    z-index: 2;
+}
+
+section .media.s3 video{
+    position: absolute;
+    width: 341px;
+    margin-top: 54px;
+    margin-left: -453px;
+    z-index: 1;
+}
+
+section .media.s4{
+    margin-right: 218px;
+}
+
+section .media.s4 img{
+    width: 500px;
+}
+
+.borders{
+    width: 100%;
+    height: 7px;
+    background-color: #333333;
+}
+
+.footersec{
+    padding: 2px 298px;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.tele{
+    font-size: 1em;
+    color: #737373;
+    margin-left: 217px;
+    margin-bottom: 24px;
+}
+
+.footer{
+    display: flex;
+    margin-top: 10px;
+    font-size: 13px;
+    justify-content: center;
+    line-height: 2.5;
+}
+div.footer a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.colom1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 112px;
+}
+.colom2{
+    display: flex;
+    flex-direction: column;
+    margin-right: 112px;
+}
+
+.colom3{
+    display: flex;
+    flex-direction: column;
+    margin-right: 112px;
+}
+
+.colom4{
+    display: flex;
+    flex-direction: column;
+    margin-right: 112px;
+}
+
+
+.footselect{
+    padding-left: 216px;
+    padding-top: 36px;
+}
+
+.footselect select{
+    background: transparent;
+    font-size: 16px;
+    color: #737373;
+    padding: 6px 17px;
+    border-radius: 3px;
+    border-color: #737373;
+    padding: 24px;
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.footselect svg {
+    height: 20px;
+    color: #737373;
+    position: absolute;
+    margin-top: 23px;
+    margin-left: 6px;
+}
+
+.netflix{
+    color: #737373;
+    padding-left: 217px;
+    padding-top: 22px;
+    font-size: 13px;
+}
